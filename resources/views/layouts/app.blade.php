@@ -13,7 +13,10 @@
 
 <body>
     <div class="container mt-4">
-        <h1>@yield('header')</h1>
+        <a href="/">Home</a>
+        <a href="{{ route('articles.index') }}">Articles</a>
+    </div>
+    <div class="container mt-4">
         <div>
             @yield('content')
         </div>
