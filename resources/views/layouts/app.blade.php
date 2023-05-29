@@ -18,6 +18,9 @@
     </div>
     <div class="container mt-4">
         <div>
+            @if(Session::has('message'))
+            <p>{{ Session::get('message') }}</p>
+            @endif
             @yield('content')
         </div>
     </div>
